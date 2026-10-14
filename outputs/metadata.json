@@ -1,0 +1,124 @@
+{
+  "created_utc": "2026-10-14T19:09:11.541324+00:00",
+  "project": "Original QUEST airborne gravity, Geoscience BC Report 2008-08",
+  "source_url": "https://www.geosciencebc.com/major-projects/quest/",
+  "source_checksums": {
+    "GBCReport2008-8_Gravity_Data.zip": "d5e5235abe9d44d2c0512a22582a286c7410ffa153617a10021d10a471f80bc4",
+    "Gravity_Technical_Report.pdf": "0f36028cf514dc56ac171df8bb4135b1d1f0ca358fc2f18e21291a6d0d30dab3"
+  },
+  "config": {
+    "crs": "EPSG:26910",
+    "block_size_m": 500,
+    "output_grid_m": 1000,
+    "max_nearest_distance_m": 3000,
+    "max_triangle_edge_m": 7000,
+    "cv_folds": 5,
+    "cv_channel": "GRVBGL100",
+    "regional_sigma_m": 20000,
+    "regional_min_support": 0.95,
+    "consistency_stride": 100
+  },
+  "qc": {
+    "rows_parsed": 1049547,
+    "line_sections": 340,
+    "missing_by_channel": {
+      "SECOND": 0,
+      "YEAR": 0,
+      "DAY": 0,
+      "FLT": 0,
+      "LINE": 0,
+      "LATWGS84": 0,
+      "LONGWGS84": 0,
+      "UTMXNAD83": 0,
+      "UTMYNAD83": 0,
+      "GPSZNAD83": 0,
+      "MSLZ": 0,
+      "RALT": 0,
+      "FZ": 0,
+      "AZ": 0,
+      "GRVRAW": 0,
+      "GRVLAT": 0,
+      "GRVEOT": 0,
+      "GRVFRA": 0,
+      "GRVFRA100": 0,
+      "GRVFRAL100": 0,
+      "BTERRAIN": 0,
+      "SBGCOR": 0,
+      "GRVBGL100": 0,
+      "ISOCORR": 0,
+      "ISOBGL3.5": 0,
+      "GRVFRAL3.5": 0,
+      "GRVBGL3.5": 0
+    },
+    "duplicate_time_line_records": 0,
+    "rows_excluded_nonfinite_required": 0,
+    "crs_check": {
+      "n": 10496,
+      "median_difference_m": 1.3025522116572519,
+      "max_difference_m": 1.3115128313871016,
+      "note": "Modern EPSG transformation versus supplied WGS84/NAD83 realization; not survey positional accuracy."
+    },
+    "isostatic_identity": {
+      "n": 1049547,
+      "bias_mgal": 0.00016493782555712042,
+      "mae_mgal": 0.006466189698987312,
+      "rmse_mgal": 0.0118688272652306,
+      "p95_abs_mgal": 0.020000000000004903
+    },
+    "bouguer100_minus_freeair100_minus_slab": {
+      "n": 1049547,
+      "bias_mgal": -0.4792743917137585,
+      "mae_mgal": 4.030404260123655,
+      "rmse_mgal": 6.523528689439156,
+      "p95_abs_mgal": 14.770000000000024
+    },
+    "utc_seconds_above_86400": 43663,
+    "ranges": {
+      "LATWGS84": [
+        52.2882757,
+        56.248308
+      ],
+      "LONGWGS84": [
+        -126.2248233,
+        -120.5207219
+      ],
+      "UTMXNAD83": [
+        300095.66,
+        669096.23
+      ],
+      "UTMYNAD83": [
+        5795902.42,
+        6236084.32
+      ],
+      "GRVBGL100": [
+        -183.84,
+        -71.09
+      ]
+    },
+    "supplier_bouguer_range_mgal": [
+      -183.92591857910156,
+      -72.72530364990234
+    ],
+    "supplier_valid_grid_nodes": 755398,
+    "blocks": 79791,
+    "planned_traverse_lines": 246
+  },
+  "software": {
+    "python": "3.10.6",
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "matplotlib": "3.10.8",
+    "rasterio": "1.4.4",
+    "pyproj": "3.7.1"
+  },
+  "validation_scope": "Interpolation consistency of supplier-corrected/levelled data; not independent instrument accuracy.",
+  "not_performed": [
+    "new terrain correction",
+    "normal gravity reduction",
+    "remove-compute-restore",
+    "independent terrestrial validation",
+    "full navigation simulation",
+    "magnetic processing"
+  ]
+}

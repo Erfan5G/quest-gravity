@@ -1,0 +1,16 @@
+data/raw/*
+!data/raw/.gitkeep
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.ipynb_checkpoints/
+.DS_Store
+outputs/grids/
+outputs/tables/*.csv.gz
+README.md
+docs/METADATA_ISSUES.md
+docs/METHODS.md
+docs/VERIFICATION.md
+docs/INTERVIEW_GUIDE.md
+docs/GITHUB_GUIDE.md

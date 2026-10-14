@@ -1,0 +1,12 @@
+{
+  "crs": "EPSG:26910",
+  "block_size_m": 500,
+  "output_grid_m": 1000,
+  "max_nearest_distance_m": 3000,
+  "max_triangle_edge_m": 7000,
+  "cv_folds": 5,
+  "cv_channel": "GRVBGL100",
+  "regional_sigma_m": 20000,
+  "regional_min_support": 0.95,
+  "consistency_stride": 100
+}

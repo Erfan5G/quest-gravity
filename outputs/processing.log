@@ -1,0 +1,8 @@
+2026-10-14 12:08:02,290 INFO Parsing all released line observations
+2026-10-14 12:08:12,516 INFO Supplier grid orientation and channel consistency verified
+2026-10-14 12:08:17,032 INFO Completed held-line fold 1/5
+2026-10-14 12:08:21,766 INFO Completed held-line fold 2/5
+2026-10-14 12:08:26,814 INFO Completed held-line fold 3/5
+2026-10-14 12:08:37,740 INFO Completed held-line fold 4/5
+2026-10-14 12:08:45,888 INFO Completed held-line fold 5/5
+2026-10-14 12:09:11,605 INFO Completed pipeline; results written to C:\Erfan\GEO QUEST\QUEST_BC_Gravity_Project\quest-gravity\outputs
